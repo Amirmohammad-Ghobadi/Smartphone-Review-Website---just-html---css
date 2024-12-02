@@ -1,0 +1,121 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography and Colors */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #f5f5f5, #ffffff);
+    color: #333;
+}
+
+/* Flex Layout */
+.content-layout {
+    display: flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    margin-bottom: 1rem;
+    color: #ff6f61;
+}
+
+.sidebar .ad img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.sidebar ul li {
+    margin: 0.5rem 0;
+}
+
+.sidebar ul button {
+    width: 100%;
+    padding: 0.5rem;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar ul button:hover {
+    background: #e65c50;
+}
+
+/* Main Content */
+.main-content {
+    width: 75%;
+}
+
+.hero {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.hero-content h2 {
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    margin-bottom: 1rem;
+}
+
+/* Reviews Section */
+.reviews h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #333;
+}
+
+.card-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
